@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>취향</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        article > img {
+            display: block;
+            width: 100%;
+            
+        }
+
+        body {
+            font-family: pretendard, sans-serif;
+            font-size: 18px;
+            line-height: 160%
+            
+
+            /* 웹 배경 색 
+             레이아웃 배치, 중앙 정렬 */
+        }
+
+      header {
+      background: #f2f2f2;
+      height: 50px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    
+    header #menu {
+      position: fixed;
+      top: 0;
+      margin-left: 70px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    header nav ul li {
+      display: inline;
+      text-align: center;
+    }
+    header nav ul li a {
+      display: inline-block;
+      list-style-type: none;
+      text-decoration: none;
+      color: #000;
+    }
+        section {
+            background: #554646;
+            /* flex: 2; */
+            /* min-width: 1000px; */
+            /* max-width: 100px; */
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            margin: 0px;
+        }
+
+        article {
+            /* flex: 1 = 부모(section)요소가 flex선언이 돼 있어야 flex: 1선언가능
+      여기서는 article에게 flex:1을 선언했으니 article 4개를 화면상에서 1:1:1:1 비율로 만들어 준다
+      그러므로 width가 없어도 된다. */
+      flex: 1; 
+      height: 100%;
+      padding: 35px;
+      background: #aaa;
+        }
+
+        article:nth-of-type(2),
+        article:nth-of-type(4) {
+        background: antiquewhite;
+        }
+
+        
+
+
+
+
+        .container {
+            width: 100%;
+            margin-top: 50px;
+            height: calc(100vh - 150px);
+            
+            /* 레이아웃 방식.1 */
+            /* flex */
+        }
+
+        #ho1 {
+            /* flex: 1; */
+            background: #aaa;
+            width: 100%;
+            height: 100%;
+            /* margin: 0 10px 0 40px; */
+        }
+
+        #ho2 {
+            /* flex: 1; */
+            background: #aaa;
+            width: 100%;
+            height: 100%;
+            /* margin: 0 10px 0 15px; */
+        }
+
+
+
+        #bolho1 {
+            background: antiquewhite;
+            /* margin: 0 15px 0 30px; */
+        }
+
+        #bolho2 {
+            background: antiquewhite;
+            /* margin: 0 20px 0 5px; */
+        }
+
+        
+    
+
+        
+            
+      
+
+        footer {
+            background: #302e2e;
+            color: #fff;
+            height: 100px;
+            width: 100%;
+        }
+
+    #logo {
+      width: 50px;
+      height: 50px;
+
+      display: inline;
+    }
+        
+        
+        
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><div id="logo"><img src ="./핏쟈로고.png" width="50px;"></div></a>
+        <nav id="menu">
+            <ul>
+                <li><a href="name.html">이름</a></li>&nbsp;&nbsp;
+                <li><a href="goal.html">swot 분석</a></li>&nbsp;&nbsp;
+                <li><a href="취향.html">취향</a></li>&nbsp;&nbsp;
+                <li><a href="화보집-참고.html">화보집</a></li>&nbsp;&nbsp;
+                <li><a href="hear.html">듣고싶은말</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div class="container">
+        <section>
+          <article>
+            <h2>호</h2></br><strong>제가 소중하게 생각하는 물건은 키우는 식물들입니다.</strong></b> 스킨답서스, 트리안, 하트쿵야, 단애의 여왕을 키우고 있어요.
+            너무 예쁘죠! 많이 사랑하고 아끼는 마음으로 키우고 있답니다. 물 주는 걸 좀 미뤘다가 잎사귀가 노랗게 변하면 마음이 아파요.</br>
+            <img src="./정원-편집.jpg" width="400px">
+          </article>
+          <article>
+            <h2>불호</h2></br>
+            <strong>게임</strong>을 별로 좋아하지 않습니다. 제 처음이자 마지막 게임은 롤인데요.
+            복잡한 상성과 높은 컨트롤 실력을 요구하는 게임이었고, 1년 하고 재능이 없다는걸 깨달았습니다.
+            이 외에도 몇 모바일게임을 해보았는데 며칠하다가 질려서 한 달 이상 해본건 없네요.
+            가볍고 재밌게 즐길 수 있는 게임이 있다면 제게 추천해주세요.</br>
+            <img src="점수판.png">
+          </article>
+          <article>
+            <h2>호</h2></br><strong>독립서점에 들르는 것, 책과 글쓰는 것을 좋아합니다.</strong>
+            친구가 독서 습관이 잡혀있는건 굉장히 큰 무기라고 하더라구요.
+            그때 깨달았어요. 단순히 좋아하는 걸 넘어 나에게 힘이 되어주는구나. 나중에는 제 이름으로 독립출판도 해보고 싶어요.
+            요즘 읽고 있는 책은 나카지마 다카시의 메모하는 습관입니다.
+          </br>
+            <img src="./책리스트-2.jpg" width="400px">
+          </article>
+          <article>
+            <h2>불호</h2>단것을 별로 안좋아합니다. 1년 전만 해도 빵, 오렌지 주스, 브런치, 수플레 팬케이크 등을 좋아했었는데요.</br>
+            <strong> 지금은 어른이 된건지 면과 빵, 달달구리보다 밥이 좋습니다.</strong>
+            <img src="수플레.jpg">
+          </article>
+        </section>
+      </div>
+    <main></main>
+
+    <footer>
+        Company : 주식회사 서울피자양반  &nbsp; &nbsp; Owner : 이초월</br>
+    Tel : 1544-3983 (유선 상담 불가) E-Mail : healmeanliv@gmail.com</br>
+    Copyright &copy; 이초월 All Rights Reserved.
+    </footer>
+
+</body>
+
+</html>
