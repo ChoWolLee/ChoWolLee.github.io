@@ -1,0 +1,96 @@
+/*오늘 코딩한거 파일 클라우드, usb에 올리기
+배경색 1080씩 다르게 하는거 어떻게 하지?*/
+
+ul a {
+    text-decoration: none;
+    color: black;
+
+}
+ul li {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    padding: 30px 0px 0px 100px;
+}
+
+* {
+    font-family: Pretendard;
+
+}
+
+
+.bg {
+    width: 1920px;
+    height: 13472px;
+    flex-grow: 0;
+    padding: 221px 0 132.2px;
+    background-color: #ebebeb;
+}/*배경*/
+
+.mz {
+    width: 456px;
+    height: 60px;
+    margin: 58px 32px 27px 138px;
+    font-size: 50px;
+    text-align: left;
+    color: rgb(151, 150, 150);
+}/*글귀*/
+
+.주락 {
+    width: 121px;
+    height: 84px;
+    margin: 27px 1px 297px 138px;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(151, 150, 150);
+}/* 주락*/
+
+
+
+.left.to.right {
+    position: relative;
+    opacity: 0; /* 초기 불투명 */
+    animation: moveLeftToRight 3s forwards; /* 애니메이션 적용 */
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        left: -100%; /* 왼쪽 밖으로 완전히 나감 */
+        opacity: 0; /* 불투명 */
+    }
+    100% {
+        left: 138px; /* 가로 위치 138px */
+        top: 279px; /* 세로 위치 279px */
+        opacity: 1; /* 완전 투명 */
+    }
+}/*타이틀 페럴릭스*/
+
+
+/*
+.주락 글귀 {
+
+
+    margin: 297px 31px 37px 138px;
+
+    font-size: 24px;
+    text-align: left;
+    color: #979696;
+
+}
+*/
+
+.mobile {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
